@@ -1,10 +1,10 @@
 ﻿#nullable enable
-namespace UniT.Entities
+namespace TheOne.Entities
 {
     using System.Diagnostics.CodeAnalysis;
-    using UniT.DI;
+    using TheOne.DI;
     using UnityEngine;
-    #if UNIT_UNITASK
+    #if THEONE_UNITASK
     using System.Threading;
     #else
     using System.Collections;
@@ -71,7 +71,7 @@ namespace UniT.Entities
 
         #region Async
 
-        #if UNIT_UNITASK
+        #if THEONE_UNITASK
         public CancellationToken GetCancellationTokenOnDisable();
         #else
         public void StartCoroutine(IEnumerator coroutine);

@@ -1,17 +1,17 @@
 #nullable enable
-namespace UniT.Entities
+namespace TheOne.Entities
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
-    using UniT.DI;
-    using UniT.Extensions;
-    using UniT.Logging;
-    using UniT.Pooling;
+    using TheOne.DI;
+    using TheOne.Extensions;
+    using TheOne.Logging;
+    using TheOne.Pooling;
     using UnityEngine;
     using UnityEngine.Scripting;
-    using ILogger = UniT.Logging.ILogger;
-    #if UNIT_UNITASK
+    using ILogger = TheOne.Logging.ILogger;
+    #if THEONE_UNITASK
     using System.Threading;
     using Cysharp.Threading.Tasks;
     #else
@@ -49,7 +49,7 @@ namespace UniT.Entities
 
         void IEntityManager.Load(string key, int count) => this.objectPoolManager.Load(key, count);
 
-        #if UNIT_UNITASK
+        #if THEONE_UNITASK
         UniTask IEntityManager.LoadAsync(string key, int count, IProgress<float>? progress, CancellationToken cancellationToken) => this.objectPoolManager.LoadAsync(key, count, progress, cancellationToken);
         #else
         IEnumerator IEntityManager.LoadAsync(string key, int count, Action? callback, IProgress<float>? progress) => this.objectPoolManager.LoadAsync(key, count, callback, progress);

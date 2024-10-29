@@ -1,5 +1,5 @@
 ﻿#nullable enable
-namespace UniT.Entities
+namespace TheOne.Entities
 {
     public interface IComponentLifecycle
     {

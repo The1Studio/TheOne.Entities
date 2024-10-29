@@ -1,5 +1,5 @@
 #nullable enable
-namespace UniT.Entities.Controller
+namespace TheOne.Entities.Controller
 {
     using System;
 
@@ -31,7 +31,7 @@ namespace UniT.Entities.Controller
         }
     }
 
-    public abstract class Entity<TParams, TController> :  UniT.Entities.Entity<TParams>, IComponent where TController : IController
+    public abstract class Entity<TParams, TController> :  TheOne.Entities.Entity<TParams>, IComponent where TController : IController
     {
         protected virtual Type ControllerType => typeof(TController);
 

@@ -1,5 +1,5 @@
 ﻿#nullable enable
-namespace UniT.Entities.Controller
+namespace TheOne.Entities.Controller
 {
     public abstract class Controller<TOwner> : IController where TOwner : IHasController
     {

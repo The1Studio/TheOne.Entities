@@ -1,10 +1,10 @@
-#if UNIT_ZENJECT
+#if THEONE_ZENJECT
 #nullable enable
-namespace UniT.Entities.DI
+namespace TheOne.Entities.DI
 {
-    using UniT.DI;
-    using UniT.Logging.DI;
-    using UniT.Pooling.DI;
+    using TheOne.DI;
+    using TheOne.Logging.DI;
+    using TheOne.Pooling.DI;
     using Zenject;
 
     public static class EntityManagerZenject

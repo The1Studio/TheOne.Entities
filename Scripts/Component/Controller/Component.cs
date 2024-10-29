@@ -1,8 +1,8 @@
 ﻿#nullable enable
-namespace UniT.Entities.Component.Controller
+namespace TheOne.Entities.Component.Controller
 {
     using System;
-    using UniT.Entities.Controller;
+    using TheOne.Entities.Controller;
 
     public abstract class Component<TController> : Component, IHasController where TController : IComponentController
     {

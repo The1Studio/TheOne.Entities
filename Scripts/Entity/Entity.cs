@@ -1,8 +1,8 @@
 ﻿#nullable enable
-namespace UniT.Entities.Entity
+namespace TheOne.Entities.Entity
 {
     using UnityEngine;
-    using Component = UniT.Entities.Component.Component;
+    using Component = TheOne.Entities.Component.Component;
 
     [DisallowMultipleComponent]
     public abstract class BaseEntity : Component, IEntity

@@ -1,9 +1,9 @@
 ﻿#nullable enable
-namespace UniT.Entities.Component
+namespace TheOne.Entities.Component
 {
     using System.Diagnostics.CodeAnalysis;
-    using UniT.Entities.Entity;
-    using UniT.Extensions;
+    using TheOne.Entities.Entity;
+    using TheOne.Extensions;
 
     public abstract class Component : BetterMonoBehavior, IComponent
     {

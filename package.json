@@ -1,8 +1,8 @@
 {
-  "name": "com.frostbun.unit.entities",
-  "displayName": "UniT Entities",
+  "name": "com.theone.entities",
+  "displayName": "TheOne Entities",
   "description": "Entity Manager for Unity",
-  "version": "1.0.32",
+  "version": "1.0.11",
   "unity": "2022.3",
   "license": "MIT",
   "author": {
@@ -11,8 +11,8 @@
     "url": "https://github.com/frostbun"
   },
   "dependencies": {
-    "com.frostbun.unit.extensions": "1.0.80",
-    "com.frostbun.unit.pooling": "1.0.16",
-    "com.frostbun.unit.di": "1.0.12"
+    "com.theone.extensions": "1.0.28",
+    "com.theone.pooling": "1.0.5",
+    "com.theone.di": "1.0.0"
   }
 }

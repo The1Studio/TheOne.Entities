@@ -1,8 +1,8 @@
 ﻿#nullable enable
-namespace UniT.Entities.Controller
+namespace TheOne.Entities.Controller
 {
     using System.Diagnostics.CodeAnalysis;
-    #if UNIT_UNITASK
+    #if THEONE_UNITASK
     using System.Threading;
     #else
     using System.Collections;
@@ -81,7 +81,7 @@ namespace UniT.Entities.Controller
 
         #region Async
 
-        #if UNIT_UNITASK
+        #if THEONE_UNITASK
         protected CancellationToken GetCancellationTokenOnDisable() => this.Component.GetCancellationTokenOnDisable();
         #else
         protected void StartCoroutine(IEnumerator coroutine) => this.Component.StartCoroutine(coroutine);

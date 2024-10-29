@@ -1,5 +1,5 @@
 ﻿#nullable enable
-namespace UniT.Entities.Controller
+namespace TheOne.Entities.Controller
 {
     public interface IComponentWithController : IComponent
     {

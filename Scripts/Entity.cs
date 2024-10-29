@@ -1,5 +1,5 @@
 ﻿#nullable enable
-namespace UniT.Entities
+namespace TheOne.Entities
 {
     using System;
     using UnityEngine;

@@ -1,11 +1,11 @@
 #nullable enable
-namespace UniT.Entities
+namespace TheOne.Entities
 {
     using System;
     using System.Collections.Generic;
-    using UniT.Extensions;
+    using TheOne.Extensions;
     using UnityEngine;
-    #if UNIT_UNITASK
+    #if THEONE_UNITASK
     using System.Threading;
     using Cysharp.Threading.Tasks;
     #else
@@ -68,7 +68,7 @@ namespace UniT.Entities
 
         #region Async
 
-        #if UNIT_UNITASK
+        #if THEONE_UNITASK
         public UniTask LoadAsync(object key, int count = 1, IProgress<float>? progress = null, CancellationToken cancellationToken = default);
 
         public UniTask LoadAsync<TEntity>(int count = 1, IProgress<float>? progress = null, CancellationToken cancellationToken = default) where TEntity : IEntity => this.LoadAsync(typeof(TEntity).GetKey(), count, progress, cancellationToken);

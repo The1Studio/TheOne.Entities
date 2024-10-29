@@ -1,0 +1,17 @@
+﻿{
+  "name": "TheOne.Entities",
+  "rootNamespace": "TheOne.Entities",
+  "references": [
+    "TheOne.Extensions",
+    "TheOne.Pooling",
+    "TheOne.DI",
+    "UniTask"
+  ],
+  "versionDefines": [
+    {
+      "name": "com.cysharp.unitask",
+      "expression": "",
+      "define": "THEONE_UNITASK"
+    }
+  ]
+}

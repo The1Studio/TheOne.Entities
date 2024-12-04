@@ -2,7 +2,7 @@
   "name": "com.theone.entities",
   "displayName": "TheOne Entities",
   "description": "Entity Manager for Unity",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "unity": "2022.3",
   "license": "MIT",
   "author": {
@@ -11,7 +11,7 @@
     "url": "https://github.com/frostbun"
   },
   "dependencies": {
-    "com.theone.extensions": "1.0.1",
+    "com.theone.extensions": "1.0.2",
     "com.theone.logging": "1.0.0",
     "com.theone.pooling": "1.0.1",
     "com.theone.di": "1.0.0"
